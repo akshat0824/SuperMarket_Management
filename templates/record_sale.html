@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Record Sale</h2>
+
+<form method="POST">
+   <div class="form-group">
+       <label for="product_id">Select Product</label>
+       <select class="form-control" id="product_id" name="product_id" required>
+           {% for product in products %}
+           <!-- Ensure that each product has an ID and a name -->
+           <option value="{{ product.id }}">{{ product.name }}</option>
+           {% endfor %}
+       </select >
+   </div >
+
+   <!-- Dropdown for Selecting Customer -->
+   <div class="form-group">
+       <label for="customer_id">Select Customer</label>
+       <select class="form-control" id='customer_id' name='customer_id' required >
+           {% for customer in customers %}
+           <!-- Ensure that each customer has an ID and a name -->
+           <option value="{{ customer.id }}">{{ customer.name }}</option>
+           {% endfor %}
+       </select >
+   </div >
+
+   <!-- Input for Quantity -->
+   <div class='form-group'>
+       <label for='quantity'>Quantity</label >
+       <input type='number' class='form-control' id='quantity' name='quantity' required >
+   </div >
+
+   <!-- Submit Button -->
+   <button type='submit' class='btn btn-primary'>Record Sale</button >
+</form >
+
+{% endblock %}

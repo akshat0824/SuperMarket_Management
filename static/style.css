@@ -1,0 +1,187 @@
+/* Theme Toggle Styles */
+.theme-toggle {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Space above the toggle */
+}
+
+.theme-toggle input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+.theme-toggle label {
+    background-color: #007bff; /* Primary color for light mode */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the label */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Active State Styles */
+.theme-toggle input[type="checkbox"]:checked + label {
+    background-color: #0056b3; /* Darker blue for the active state */
+}
+
+/* Hover Effect */
+.theme-toggle label:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Focus Effect (for accessibility) */
+.theme-toggle label:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, .5); /* Blue glow effect on focus */
+}
+
+/* General Styles */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Arial', sans-serif; /* Default font */
+    color: #343a40; /* Dark gray text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+.container {
+    margin: 20px auto; /* Center the container with automatic left and right margins */
+    padding: 20px; /* Padding around the container */
+    max-width: 900px; /* Set maximum width for the container */
+    background-color: white; /* White background for content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+h2 {
+    color: #343a40; /* Dark gray header color */
+}
+
+/* Button Styles */
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px; /* Increased padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size for better readability */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text color for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* General Input Styles */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select {
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 0.25rem; /* Rounded corners */
+    padding: 10px; /* Padding inside inputs */
+    width: 100%; /* Full width inputs */
+    height: 45px; /* Fixed height for uniformity */
+    font-size: 16px; /* Font size for better readability */
+}
+
+/* Focus Styles for Inputs and Selects*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #80bdff; /* Blue border on focus for inputs and selects*/
+    outline: none; /* Remove default outline on focus */
+    box-shadow: 0 0 5px rgba(0,123,255,.5); /* Blue glow effect on focus for inputs and selects*/
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Space below each form group */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold; /* Bold labels for better visibility */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+/* Alert Styles (for success or error messages)*/
+.alert {
+   margin-top: 20px;
+}
+
+/* List Styles (for unordered lists)*/
+ul {
+   list-style-type: none;
+   padding-left: 0;
+}
+
+li {
+   background-color: #ffffff;
+   border-radius: 5px;
+   padding: 10px;
+   margin-bottom: 10px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode Styles (adjusted) */
+
+.dark-mode {
+   background-color: #121212;
+   color: #e0e0e0;
+}
+
+.dark-mode .container {
+   background-color: #1e1e1e;
+}
+
+.dark-mode h2,
+.dark-mode label,
+.dark-mode p,
+.dark-mode th,
+.dark-mode td {
+   color: #ffffff;
+}
+
+.dark-mode .btn {
+   background-color: #555;
+   color: white;
+}
+
+.dark-mode .btn:hover {
+   background-color: #777;
+}
+
+/* Additional Styles for Inputs and Text Areas in Dark Mode */
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="password"],
+.dark-mode input[type="number"],
+.dark-mode select {
+   background-color: #333;
+   color: #ffffff;
+   border-color: #444;
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode input[type="email"]:focus,
+.dark-mode input[type="password"]:focus,
+.dark-mode input[type="number"]:focus,
+.dark-mode select:hover {
+   border-color:#80bdff;
+}
+
+/* Responsive Styles (if needed) */
+
+@media (max-width: 768px) {
+   .container {
+       margin-left: 10px;
+       margin-right: 10px;
+   }
+}
