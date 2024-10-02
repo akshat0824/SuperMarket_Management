@@ -25,8 +25,9 @@ The **Supermarket Management System** is a web application built using Flask, de
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/supermarket-management-system.git
-   cd supermarket-management-system
+   git clone https://github.com/yourusername/SuperMarket_Management.git
+   cd SuperMarket_Management
+   
   
 2.Create a virtual environment:
    ```bash
