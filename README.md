@@ -51,7 +51,7 @@ The **Supermarket Management System** is a web application built using Flask, de
   You may need to create the database tables by running a script or using the Flask shell.
   ```bash
    python
-   From app import app.db
+   From app import app,db
    with app.app_context():
    Db.create_all()
   ```   
